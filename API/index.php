@@ -17,7 +17,7 @@
     $db = new Db();
 
     //$db->createDatabase($serverName,$userName,$password,$dbName);
-    $db->createTable($serverName,$userName,$password,$dbName,$tableName);
+    //$db->createTable($serverName,$userName,$password,$dbName,$tableName);
 
     //Based on inputs from App.vue, it calls methods in the Bb class.
     $received_data = json_decode(file_get_contents("php://input"));
