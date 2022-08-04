@@ -6,17 +6,17 @@
     require_once("./database/db.php");
 
     // Connection to the database. /////////////////
-    $serverName = "localhost";
-    $userName = "root";
-    $password = "Hesoyam1???";
-    $dbName = "dbastronauti";
+    $serverName = "sql11.freesqldatabase.com";
+    $userName = "sql11510839";
+    $password = "L2EWZkauFh";
+    $dbName = "sql11510839";
     $tableName = "astronauti";
     ///////////////////////////////////////////////////
 
     $response = [];
     $db = new Db();
 
-    $db->createDatabase($serverName,$userName,$password,$dbName);
+    //$db->createDatabase($serverName,$userName,$password,$dbName);
     $db->createTable($serverName,$userName,$password,$dbName,$tableName);
 
     //Based on inputs from App.vue, it calls methods in the Bb class.

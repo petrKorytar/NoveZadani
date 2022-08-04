@@ -3,10 +3,10 @@
         // Connection to the database. ///////////////////////////////
         private function dbConnection(){
     
-            $serverName = "localhost";
-            $userName = "root";
-            $password = "Hesoyam1???";
-            $dbName = "dbastronauti";
+            $serverName = "sql11.freesqldatabase.com";
+            $userName = "sql11510839";
+            $password = "L2EWZkauFh";
+            $dbName = "sql11510839";
 
             return new PDO("mysql:host=$serverName;dbname=$dbName", $userName, $password);
         }
@@ -49,7 +49,7 @@
     
          // Returns all users as an array.
        public function fetchAllUsers($tableName){
-    
+            $data=[];
             $allUsers =  $this->dbConnection()->query("SELECT * FROM $tableName ORDER BY id DESC");
             while($row = $allUsers->fetch(PDO::FETCH_ASSOC)){
                 $data[]=$row;
