@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 4173",
-    "build-css": "tailwindcss -i ./src/assets/main.css -o ./dist/output.css --watch"
+    "build-css": "tailwindcss -i ./src/assets/main.css -o ./public/main.css --watch"
   },
   "dependencies": {
     "axios": "^0.27.2",
