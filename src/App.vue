@@ -127,7 +127,7 @@
   },
   methods: {
      async fetchAllData(){
-       await  axios.post('../API/index.php',{action:'fetchall'})
+       await  axios.post('https://nove-zadani.vercel.app/NoveZadani/API/index.php',{action:'fetchall'})
             .then((response)=>{
                 this.allData = response.data
                 this.searchedArray= response.data
@@ -179,7 +179,7 @@
             // Insert new user.
                 if(this.actionButton=="Vložit"){
 
-                  await  axios.post('../API/index.php',{
+                  await  axios.post('https://nove-zadani.vercel.app/NoveZadani/API/index.php',{
                         action:'insert',
                         firstName:this.firstName,
                         lastName:this.lastName,
@@ -198,7 +198,7 @@
 
             // Edit exist user.
                 if(this.actionButton == "Upravit"){
-                  await axios.post('../API/index.php',{
+                  await axios.post('https://nove-zadani.vercel.app/NoveZadani/API/index.php',{
                         action:'update',
                         firstName: this.firstName,
                         lastName: this.lastName,
@@ -224,7 +224,7 @@
 
      //It captures the data of a single user.
     fetchData(id){
-        axios.post('../API/index.php',{
+        axios.post('https://nove-zadani.vercel.app/NoveZadani/API/index.php',{
             action:'fetchSingle',
             id:id
 
@@ -243,7 +243,7 @@
     // Delete user by id.
     deleteData(id){
         if(confirm("Opravdu chceš tento záznam smazat?")){
-            axios.post('../API/index.php',{
+            axios.post('https://nove-zadani.vercel.app/NoveZadani/API/index.php',{
                 action:'delete',
                 id:id
 

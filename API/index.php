@@ -6,11 +6,20 @@
     require_once("./database/db.php");
 
     // Connection to the database. /////////////////
+    
     $serverName = "sql11.freesqldatabase.com";
     $userName = "sql11510839";
     $password = "L2EWZkauFh";
     $dbName = "sql11510839";
     $tableName = "astronauti";
+
+/*
+    $serverName = "localhost";
+    $userName = "root";
+    $password = "Hesoyam1???";
+    $dbName = "dbastronauti";
+    $tableName = "astronauti";
+    */
     ///////////////////////////////////////////////////
 
     $response = [];

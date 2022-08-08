@@ -8,6 +8,12 @@
             $password = "L2EWZkauFh";
             $dbName = "sql11510839";
 
+/*
+            $serverName = "localhost";
+            $userName = "root";
+            $password = "Hesoyam1???";
+            $dbName = "dbastronauti";
+*/
             return new PDO("mysql:host=$serverName;dbname=$dbName", $userName, $password);
         }
         //////////////////////////////////////////////////////////////
